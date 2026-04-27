@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="dashboard-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="dashboard-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="dash-nav-links">
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="explore.html">Explore</a>
+            <a href="create-request.html">Create Request</a>
+            <a href="messages.html">Messages</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="dash-nav-actions">
+            <a href="notifications.html" class="btn-white-pill">Notifications</a>
+            <a href="ai-center.html" class="btn-gradient-pill">Open AI Center</a>
+        </div>
+    </header>
+
+    <main class="container dashboard-container">
+        
+        <!-- Header Card -->
+        <section class="dashboard-header-card">
+            <div class="dashboard-pre-heading">DASHBOARD</div>
+            <h1 class="dashboard-header-heading">Welcome back, Ayesha Khan.</h1>
+            <p class="dashboard-header-subtitle">Your command center for requests, AI insights, helper momentum, and live community activity.</p>
+        </section>
+
+        <!-- Stats Row -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-pre-heading">TRUST SCORE</div>
+                <div class="stat-value">92%</div>
+                <div class="stat-desc">Driven by solved requests and consistent support.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-pre-heading">HELPING</div>
+                <div class="stat-value">2</div>
+                <div class="stat-desc">Requests where you are currently listed as a helper.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-pre-heading">OPEN REQUESTS</div>
+                <div class="stat-value">2</div>
+                <div class="stat-desc">Community requests currently active across the feed.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-pre-heading">AI PULSE</div>
+                <div class="stat-value">1 trends</div>
+                <div class="stat-desc">Trend count detected in the latest request activity.</div>
+            </div>
+        </div>
+
+        <!-- Main Layout Split -->
+        <div class="dashboard-layout">
+            
+            <!-- Left Column: Main Feed -->
+            <div class="main-column">
+                
+                <div class="recent-requests-header">
+                    <div>
+                        <div class="section-pre-heading">RECENT REQUESTS</div>
+                        <h2 class="section-heading">What the community needs right now</h2>
+                    </div>
+                    <a href="explore.html" class="btn-white-pill">Go to feed</a>
+                </div>
+
+                <div class="requests-feed">
+                    
+                    <!-- Feed Card 1 -->
+                    <article class="feed-card-large">
+                        <div class="card-tags">
+                            <span class="feed-tag tag-web">Web Development</span>
+                            <span class="feed-tag tag-high">High</span>
+                            <span class="feed-tag tag-open">Open</span>
+                        </div>
+                        <h3 class="card-title">Need help making my portfolio responsive before demo day</h3>
+                        <p class="card-desc">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+                        
+                        <div class="card-skill-tags">
+                            <span class="skill-pill">HTML/CSS</span>
+                            <span class="skill-pill">Responsive</span>
+                            <span class="skill-pill">Portfolio</span>
+                        </div>
+
+                        <div class="card-author">Sara Noor</div>
+                        <div class="card-footer">
+                            <span class="card-meta">Karachi &bull; 1 helper interested</span>
+                            <a href="request-detail.html" class="btn-white-pill">Open details</a>
+                        </div>
+                    </article>
+
+                    <!-- Feed Card 2 -->
+                    <article class="feed-card-large">
+                        <div class="card-tags">
+                            <span class="feed-tag tag-design">Design</span>
+                            <span class="feed-tag tag-medium">Medium</span>
+                            <span class="feed-tag tag-open">Open</span>
+                        </div>
+                        <h3 class="card-title">Looking for Figma feedback on a volunteer event poster</h3>
+                        <p class="card-desc">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+                        
+                        <div class="card-skill-tags">
+                            <span class="skill-pill">Figma</span>
+                            <span class="skill-pill">Poster</span>
+                            <span class="skill-pill">Design Review</span>
+                        </div>
+
+                        <div class="card-author">Ayesha Khan</div>
+                        <div class="card-footer">
+                            <span class="card-meta">Lahore &bull; 1 helper interested</span>
+                            <a href="request-detail.html" class="btn-white-pill">Open details</a>
+                        </div>
+                    </article>
+
+                    <!-- Feed Card 3 -->
+                    <article class="feed-card-large">
+                        <div class="card-tags">
+                            <span class="feed-tag tag-career">Career</span>
+                            <span class="feed-tag tag-low">Low</span>
+                            <span class="feed-tag tag-solved">Solved</span>
+                        </div>
+                        <h3 class="card-title">Need mock interview support for internship applications</h3>
+                        <p class="card-desc">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+                        
+                        <div class="card-skill-tags">
+                            <span class="skill-pill">Interview Prep</span>
+                            <span class="skill-pill">Career</span>
+                            <span class="skill-pill">Frontend</span>
+                        </div>
+
+                        <div class="card-author">Sara Noor</div>
+                        <div class="card-footer">
+                            <span class="card-meta">Remote &bull; 2 helpers interested</span>
+                            <a href="request-detail.html" class="btn-white-pill">Open details</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Right Column: Widgets -->
+            <div class="sidebar-column">
+                
+                <!-- Insights Widget -->
+                <aside class="dashboard-widget">
+                    <div class="section-pre-heading">AI INSIGHTS</div>
+                    <h2 class="widget-heading">Suggested actions for you</h2>
+
+                    <div class="insights-list">
+                        <div class="insight-row">
+                            <span class="insight-label">Most requested category</span>
+                            <span class="insight-val">Web Development</span>
+                        </div>
+                        <div class="insight-row">
+                            <span class="insight-label">Your strongest trust driver</span>
+                            <span class="insight-val">Design Ally</span>
+                        </div>
+                        <div class="insight-row">
+                            <span class="insight-label">AI says you can mentor in</span>
+                            <span class="insight-val">HTML/CSS, UI/UX, Career Guidance, Figma</span>
+                        </div>
+                        <div class="insight-row">
+                            <span class="insight-label">Your active requests</span>
+                            <span class="insight-val">1</span>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Notifications Widget -->
+                <aside class="dashboard-widget">
+                    <div class="section-pre-heading">NOTIFICATIONS</div>
+                    <h2 class="widget-heading">Latest updates</h2>
+
+                    <div class="notif-list">
+                        
+                        <!-- Notif 1 -->
+                        <div class="notif-card">
+                            <div class="notif-content">
+                                <div class="notif-title">New helper matched to your responsive portfolio request</div>
+                                <div class="notif-meta">Match &bull; 12 min ago</div>
+                            </div>
+                            <a href="notifications.html" class="btn-read-pill">Read</a>
+                        </div>
+
+                        <!-- Notif 2 -->
+                        <div class="notif-card">
+                            <div class="notif-content">
+                                <div class="notif-title">Your trust score increased after a solved request</div>
+                                <div class="notif-meta">Reputation &bull; 1 hr ago</div>
+                            </div>
+                            <a href="notifications.html" class="btn-read-pill">Read</a>
+                        </div>
+
+                        <!-- Notif 3 -->
+                        <div class="notif-card">
+                            <div class="notif-content">
+                                <div class="notif-title">AI Center detected rising demand for interview prep</div>
+                                <div class="notif-meta">Insight &bull; Today</div>
+                            </div>
+                            <a href="ai-center.html" class="btn-read-pill">Read</a>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

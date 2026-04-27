@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <style>
+        /* Specific pill for active admin nav */
+        .admin-nav-pill {
+            background-color: #ebf1f0;
+            color: #1a8f81;
+            padding: 8px 16px;
+            border-radius: 100px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="admin-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar admin-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="admin.html" class="admin-nav-pill">Admin</a>
+        </nav>
+    </header>
+
+    <main class="container admin-container">
+        
+        <!-- Header Card -->
+        <section class="admin-header-card">
+            <div class="admin-pre-heading">ADMIN PANEL</div>
+            <h1 class="admin-header-heading">Moderation and analytics overview.</h1>
+            <p class="admin-header-subtitle">Bonus admin visibility for managing request quality and understanding platform health.</p>
+        </section>
+
+        <!-- Layout Grid -->
+        <div class="admin-layout">
+            
+            <!-- Left Panel: Moderation Table -->
+            <section class="admin-panel">
+                <div class="panel-pre-heading">REQUESTS</div>
+                <h2 class="panel-heading">Moderation table</h2>
+
+                <table class="moderation-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Urgency</th>
+                            <th>Status</th>
+                            <th>Requester</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-title">Need help making my portfolio responsive before demo day</td>
+                            <td>Web<br>Development</td>
+                            <td>High</td>
+                            <td>Open</td>
+                            <td>Sara Noor</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Looking for Figma feedback on a volunteer event poster</td>
+                            <td>Design</td>
+                            <td>Medium</td>
+                            <td>Open</td>
+                            <td>Ayesha Khan</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title">Need mock interview support for internship applications</td>
+                            <td>Career</td>
+                            <td>Low</td>
+                            <td>Solved</td>
+                            <td>Sara Noor</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Right Panel: Analytics -->
+            <section class="admin-panel">
+                <div class="panel-pre-heading">ANALYTICS</div>
+                <h2 class="panel-heading">Platform metrics</h2>
+
+                <div class="metrics-list">
+                    <div class="metric-row">
+                        <span class="metric-label">Total users</span>
+                        <span class="metric-value">3</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Total requests</span>
+                        <span class="metric-value">3</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Solved requests</span>
+                        <span class="metric-value">1</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Average trust score</span>
+                        <span class="metric-value">85%</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

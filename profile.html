@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - AI Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/aicenter.css">
+</head>
+<body class="aicenter-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar aicenter-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-request.html">Create Request</a>
+            <a href="ai-center.html" class="active">AI Center</a>
+        </nav>
+    </header>
+
+    <main class="container aicenter-container">
+        
+        <!-- AI Center Header Card -->
+        <section class="aicenter-header-card">
+            <div class="aicenter-pre-heading">AI CENTER</div>
+            <h1 class="aicenter-header-heading">See what the platform intelligence is noticing.</h1>
+            <p class="aicenter-header-subtitle">AI-like insights summarize demand trends, helper readiness, urgency signals, and request recommendations.</p>
+        </section>
+
+        <!-- Insights Row -->
+        <div class="insights-row">
+            
+            <article class="insight-card">
+                <div class="insight-label">TREND PULSE</div>
+                <div class="insight-value">Web Development</div>
+                <div class="insight-desc">Most common support area based on active community requests.</div>
+            </article>
+
+            <article class="insight-card">
+                <div class="insight-label">URGENCY WATCH</div>
+                <div class="insight-value">2</div>
+                <div class="insight-desc">Requests currently flagged high priority by the urgency detector.</div>
+            </article>
+
+            <article class="insight-card">
+                <div class="insight-label">MENTOR POOL</div>
+                <div class="insight-value">2</div>
+                <div class="insight-desc">Trusted helpers with strong response history and contribution signals.</div>
+            </article>
+
+        </div>
+
+        <!-- Main Recommendations Feed -->
+        <section class="recommendations-container">
+            <div class="rec-pre-heading">AI RECOMMENDATIONS</div>
+            <h2 class="rec-heading">Requests needing attention</h2>
+
+            <div class="rec-list">
+                
+                <article class="rec-item">
+                    <h3 class="rec-title">Need help</h3>
+                    <p class="rec-summary">AI summary: Web Development request with high urgency. Best suited for members with relevant expertise.</p>
+                    <div class="rec-tags">
+                        <span class="rec-tag rec-tag-web">Web Development</span>
+                        <span class="rec-tag rec-tag-high">High</span>
+                    </div>
+                </article>
+
+                <article class="rec-item">
+                    <h3 class="rec-title">Need help making my portfolio responsive before demo day</h3>
+                    <p class="rec-summary">Responsive layout issue with a short deadline. Best helpers are frontend mentors comfortable with CSS grids and media queries.</p>
+                    <div class="rec-tags">
+                        <span class="rec-tag rec-tag-web">Web Development</span>
+                        <span class="rec-tag rec-tag-high">High</span>
+                    </div>
+                </article>
+
+                <article class="rec-item">
+                    <h3 class="rec-title">Looking for Figma feedback on a volunteer event poster</h3>
+                    <p class="rec-summary">A visual design critique request where feedback on hierarchy, spacing, and messaging would create the most value.</p>
+                    <div class="rec-tags">
+                        <span class="rec-tag rec-tag-design">Design</span>
+                        <span class="rec-tag rec-tag-medium">Medium</span>
+                    </div>
+                </article>
+
+                <article class="rec-item">
+                    <h3 class="rec-title">Need mock interview support for internship applications</h3>
+                    <p class="rec-summary">Career coaching request focused on confidence-building, behavioral answers, and entry-level frontend interviews.</p>
+                    <div class="rec-tags">
+                        <span class="rec-tag rec-tag-career">Career</span>
+                        <span class="rec-tag rec-tag-low">Low</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

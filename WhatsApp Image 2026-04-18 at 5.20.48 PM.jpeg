@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body class="profile-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar profile-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="auth.html">Onboarding</a>
+            <a href="profile.html" class="active">Profile</a>
+        </nav>
+    </header>
+
+    <main class="container profile-container">
+        
+        <!-- Header Card -->
+        <section class="profile-header-card">
+            <div class="profile-pre-heading">PROFILE</div>
+            <h1 class="profile-header-heading">Ayesha Khan</h1>
+            <p class="profile-header-subtitle">Both &bull; Karachi</p>
+        </section>
+
+        <!-- Layout Grid -->
+        <div class="profile-layout">
+            
+            <!-- Left Panel: Public Profile -->
+            <section class="profile-panel">
+                <div class="panel-pre-heading">PUBLIC PROFILE</div>
+                <h2 class="panel-heading">Skills and reputation</h2>
+
+                <div class="profile-stat-row">
+                    <span class="profile-stat-label">Trust score</span>
+                    <span class="profile-stat-value">100%</span>
+                </div>
+
+                <div class="profile-stat-row">
+                    <span class="profile-stat-label">Contributions</span>
+                    <span class="profile-stat-value">35</span>
+                </div>
+
+                <div class="profile-section-label">Skills</div>
+                <div class="profile-pills-row">
+                    <span class="profile-pill">Figma</span>
+                    <span class="profile-pill">UI/UX</span>
+                    <span class="profile-pill">HTML/CSS</span>
+                    <span class="profile-pill">Career Guidance</span>
+                </div>
+
+                <div class="profile-section-label">Badges</div>
+                <div class="profile-pills-row">
+                    <span class="profile-pill profile-pill-badge">Design Ally</span>
+                    <span class="profile-pill profile-pill-badge">Fast Responder</span>
+                    <span class="profile-pill profile-pill-badge">Top Mentor</span>
+                </div>
+            </section>
+
+            <!-- Right Panel: Edit Profile Form -->
+            <section class="profile-panel">
+                <div class="panel-pre-heading">EDIT PROFILE</div>
+                <h2 class="panel-heading">Update your identity</h2>
+
+                <form class="profile-form" action="#" method="POST">
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="prof-name">Name</label>
+                            <input type="text" id="prof-name" class="form-control" value="Ayesha Khan">
+                        </div>
+                        <div class="form-group">
+                            <label for="prof-loc">Location</label>
+                            <input type="text" id="prof-loc" class="form-control" value="Karachi">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prof-skills">Skills</label>
+                        <input type="text" id="prof-skills" class="form-control" value="Figma, UI/UX, HTML/CSS, Career Guidance">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prof-interests">Interests</label>
+                        <input type="text" id="prof-interests" class="form-control" value="Hackathons, UI/UX, Community Building">
+                    </div>
+
+                    <button type="button" class="btn-full btn-gradient">Save profile</button>
+
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

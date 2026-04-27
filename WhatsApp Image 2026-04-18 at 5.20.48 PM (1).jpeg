@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Notifications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <style>
+        /* Temporarily overriding navbar for notifications to float over correctly */
+        .notifications-navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(244, 240, 230, 0.85);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+    </style>
+</head>
+<body class="notifications-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar notifications-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="explore.html">Explore</a>
+            <a href="notifications.html" class="active">Notifications</a>
+        </nav>
+    </header>
+
+    <main class="container notifications-container">
+        
+        <!-- Notifications Header Card -->
+        <section class="notifications-header-card">
+            <div class="notifications-pre-heading">NOTIFICATIONS</div>
+            <h1 class="notifications-header-heading">Stay updated on requests, helpers, and trust signals.</h1>
+        </section>
+
+        <!-- Main Notification Feed -->
+        <section class="notifications-feed-container">
+            <div class="feed-pre-heading">LIVE UPDATES</div>
+            <h2 class="feed-heading">Notification feed</h2>
+
+            <div class="notification-list">
+                
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">"Need help" was marked as solved</div>
+                        <div class="notification-meta">Status • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">Ayesha Khan offered help on "Need help"</div>
+                        <div class="notification-meta">Match • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">Your request "Need help" is now live in the community feed</div>
+                        <div class="notification-meta">Request • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">"Need help making my portfolio responsive before demo day" was marked as solved</div>
+                        <div class="notification-meta">Status • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">"Need help making my portfolio responsive before demo day" was marked as solved</div>
+                        <div class="notification-meta">Status • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">"Need help making my portfolio responsive before demo day" was marked as solved</div>
+                        <div class="notification-meta">Status • Just now</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">New helper matched to your responsive portfolio request</div>
+                        <div class="notification-meta">Match • 12 min ago</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">Your trust score increased after a solved request</div>
+                        <div class="notification-meta">Reputation • 1 hr ago</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status">Unread</button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <div class="notification-content">
+                        <div class="notification-title">AI Center detected rising demand for interview prep</div>
+                        <div class="notification-meta">Insight • Today</div>
+                    </div>
+                    <div class="notification-action">
+                        <button class="btn-status read">Read</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

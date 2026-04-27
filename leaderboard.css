@@ -1,0 +1,185 @@
+/* AI Center Page Styles */
+.aicenter-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container pushes down past the fixed navbar */
+.aicenter-container {
+    padding-top: 140px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* AI Center Header Card */
+.aicenter-header-card {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 64px 48px;
+    border-radius: var(--radius-xl);
+    max-width: 100%;
+}
+
+.aicenter-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.aicenter-header-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 900px;
+}
+
+.aicenter-header-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Top Insights Row */
+.insights-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.insight-card {
+    background-color: #fbfbf6;
+    padding: 32px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.insight-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.insight-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+.insight-desc {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+/* Main AI Recommendations Container */
+.recommendations-container {
+    background-color: #fbfbf6; /* Matching the sidebar light color */
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+}
+
+.rec-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.rec-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 48px;
+    color: var(--text-main);
+}
+
+/* Recommendation Items List */
+.rec-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rec-item {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.rec-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.rec-summary {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Standardizing tag pills for AI recommendations which slightly differs visually 
+   We will utilize global classes if they existed in global or just redefine them if we must.
+   Actually in the image they are pale standard colored tags.
+*/
+.rec-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.rec-tag {
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Tag colors adapted exactly from the images */
+.rec-tag-web { background-color: #e5f4ef; color: #1a8f81; }
+.rec-tag-high { background-color: #ebf1f0; color: #356e63; }
+.rec-tag-design { background-color: #e5f4ef; color: #1a8f81; }
+.rec-tag-medium { background-color: #ebf1f0; color: #356e63; }
+.rec-tag-career { background-color: #e5f4ef; color: #1a8f81; }
+.rec-tag-low { background-color: #ebf1f0; color: #356e63; }
+
+
+/* Navbar glass effect override for ai-center */
+.aicenter-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(244, 240, 230, 0.85); /* Frosty beige matching design */
+    backdrop-filter: blur(12px);
+    z-index: 100;
+}
+
+@media (max-width: 900px) {
+    .insights-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .aicenter-header-card, .recommendations-container {
+        padding: 32px 24px;
+    }
+}

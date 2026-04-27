@@ -1,0 +1,211 @@
+/* Leaderboard Page Styles */
+.leaderboard-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Like the notifications page, push content down because of fixed navbar */
+.leaderboard-container {
+    padding-top: 140px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Leaderboard Header Card */
+.leaderboard-header-card {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 64px 48px;
+    border-radius: var(--radius-xl);
+    max-width: 100%;
+}
+
+.leaderboard-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.leaderboard-header-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 900px;
+}
+
+.leaderboard-header-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Leaderboard Layout Grid */
+.leaderboard-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.leaderboard-panel {
+    background-color: #fbfbf6; /* Standard light panel color */
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+}
+
+.panel-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.panel-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.25rem;
+    margin-bottom: 32px;
+    color: var(--text-main);
+}
+
+/* Lists */
+.ranking-list, .badge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Ranking Card */
+.ranking-card {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.avatar-ak { background-color: #1a8f81; }
+.avatar-ha { background-color: #2c3e50; }
+.avatar-sn { background-color: #e67e22; }
+
+.ranking-info {
+    flex: 1;
+}
+
+.ranking-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.ranking-skills {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.ranking-stats {
+    text-align: right;
+}
+
+.ranking-score {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-main);
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 4px;
+}
+
+.ranking-contributions {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Badge Card */
+.badge-card {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.badge-info-top {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.badge-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.badge-titles {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(to right, #e6b93c, #1a8f81);
+}
+
+.fill-100 { width: 100%; }
+.fill-88 { width: 88%; }
+.fill-74 { width: 74%; }
+
+/* Navbar glass effect override for leaderboard */
+.leaderboard-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(244, 240, 230, 0.85); /* Frosty beige matching design */
+    backdrop-filter: blur(12px);
+    z-index: 100;
+}
+
+@media (max-width: 900px) {
+    .leaderboard-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .leaderboard-header-card, .leaderboard-panel {
+        padding: 32px 24px;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Request Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/request-detail.css">
+</head>
+<body class="detail-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar detail-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="explore.html">Explore</a>
+            <a href="messages.html">Messages</a>
+        </nav>
+    </header>
+
+    <main class="container detail-container">
+        
+        <!-- Header Card -->
+        <section class="detail-header-card">
+            <div class="detail-pre-heading">REQUEST DETAIL</div>
+            
+            <div class="header-tags">
+                <span class="header-tag tag-career-dark">Career</span>
+                <span class="header-tag tag-low-dark">Low</span>
+                <span class="header-tag tag-solved-dark">Solved</span>
+            </div>
+
+            <h1 class="detail-header-heading">Need mock interview support for internship applications</h1>
+            <p class="detail-header-subtitle">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+        </section>
+
+        <!-- Layout Grid -->
+        <div class="detail-layout">
+            
+            <!-- Left Column -->
+            <div class="detail-column">
+                
+                <!-- AI Summary Card -->
+                <section class="detail-panel">
+                    <div class="panel-pre-heading">AI SUMMARY</div>
+                    <p class="ai-summary-text">Career coaching request focused on confidence-building, behavioral answers, and entry-level frontend interviews.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Interview Prep</span>
+                        <span class="skill-tag">Career</span>
+                        <span class="skill-tag">Frontend</span>
+                    </div>
+                </section>
+
+                <!-- Actions Card -->
+                <section class="detail-panel">
+                    <div class="panel-pre-heading">ACTIONS</div>
+                    <div class="action-buttons">
+                        <button type="button" class="btn-solid">I can help</button>
+                        <button type="button" class="btn-outline">Mark as solved</button>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="detail-column">
+
+                <!-- Requester Card -->
+                <section class="detail-panel">
+                    <div class="panel-pre-heading">REQUESTER</div>
+                    <div class="requester-info">
+                        <div class="avatar avatar-sn">SN</div>
+                        <div class="requester-name">Sara Noor</div>
+                    </div>
+                </section>
+
+                <!-- Helpers Card -->
+                <section class="detail-panel">
+                    <div class="panel-pre-heading">HELPERS</div>
+                    <h2 class="helpers-heading">People ready to support</h2>
+
+                    <div class="helpers-list">
+                        
+                        <!-- Helper 1 -->
+                        <article class="helper-card">
+                            <div class="helper-info">
+                                <div class="avatar avatar-ak">AK</div>
+                                <div class="helper-details">
+                                    <div class="helper-name">Ayesha Khan</div>
+                                    <div class="helper-skills">Figma, UI/UX, HTML/CSS</div>
+                                </div>
+                            </div>
+                            <div class="trust-pill">Trust 100%</div>
+                        </article>
+
+                        <!-- Helper 2 -->
+                        <article class="helper-card">
+                            <div class="helper-info">
+                                <div class="avatar avatar-ha">HA</div>
+                                <div class="helper-details">
+                                    <div class="helper-name">Hassan Ali</div>
+                                    <div class="helper-skills">JavaScript, React, Git/GitHub</div>
+                                </div>
+                            </div>
+                            <div class="trust-pill">Trust<br>88%</div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

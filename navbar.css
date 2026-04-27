@@ -1,0 +1,248 @@
+/* Create Request Page Styles */
+.create-request-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-request-container {
+    padding-top: 140px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Header Card */
+.create-header-card {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 64px 48px;
+    border-radius: var(--radius-xl);
+    max-width: 100%;
+}
+
+.create-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.create-header-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 900px;
+}
+
+.create-header-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout Grid */
+.create-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 32px;
+}
+
+.create-panel {
+    background-color: #fbfbf6; /* Light cream panel color */
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Styles */
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.form-control {
+    padding: 16px;
+    border: 1px solid #e2e4df;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: white;
+    color: var(--text-main);
+    transition: border-color 0.2s;
+    outline: none;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2353645e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 48px;
+    cursor: pointer;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.btn-secondary-pill {
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    background-color: white;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-secondary-pill:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-1px);
+}
+
+.btn-primary-pill {
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    background: linear-gradient(135deg, #189886, #12abae);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+    transition: transform 0.2s;
+}
+
+.btn-primary-pill:hover {
+    background: linear-gradient(135deg, #158b7a, #109a9d);
+    transform: translateY(-1px);
+}
+
+/* AI Assistant Panel */
+.ai-panel-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.ai-panel-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.25rem;
+    margin-bottom: 40px;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+.ai-insights-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-insight-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+    gap: 24px;
+}
+
+.ai-insight-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.ai-insight-item:first-child {
+    padding-top: 0;
+}
+
+.ai-insight-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    width: 140px;
+}
+
+.ai-insight-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-main);
+    text-align: right;
+    line-height: 1.4;
+}
+
+.ai-insight-value.text-left {
+    text-align: left;
+}
+
+/* Navbar glass effect override for create request */
+.create-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(244, 240, 230, 0.85); /* Frosty beige matching design */
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    max-width: none;
+}
+
+@media (max-width: 900px) {
+    .create-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .create-header-card, .create-panel {
+        padding: 32px 24px;
+    }
+    
+    .form-group-row {
+        flex-direction: column;
+    }
+}

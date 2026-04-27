@@ -1,0 +1,224 @@
+/* Explore Page Styles */
+.explore-page {
+    /* Uses global mesh background */
+}
+
+/* Explore Header */
+.explore-header-card {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 48px;
+    border-radius: var(--radius-xl);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+
+.explore-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.explore-header-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    max-width: 800px;
+}
+
+.explore-header-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+/* Explore Layout */
+.explore-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+
+/* Filters Sidebar */
+.filters-sidebar {
+    background-color: #fbfbf6; /* Matching the auth side panel light color */
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+    height: fit-content;
+}
+
+.filters-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.filters-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 48px;
+    color: var(--text-main);
+}
+
+.filter-group {
+    margin-bottom: 24px;
+}
+
+.filter-group:last-child {
+    margin-bottom: 0;
+}
+
+.filter-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-muted);
+}
+
+/* Inputs / Selects re-used from auth if possible, but distinct here for safety */
+.filter-input, .filter-select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: white;
+    color: var(--text-main);
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.filter-input:focus, .filter-select:focus {
+    border-color: var(--primary-color);
+}
+
+.filter-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2353645e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 48px;
+    cursor: pointer;
+}
+
+/* Feed Column */
+.feed-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Feed Request Card */
+.feed-card {
+    background-color: #fbfbf6; /* Matching the sidebar light color roughly, or white */
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Re-using tags from home.css (we might need to duplicate them or assume they are in global if they were moved. Home.css has them right now. I will copy them here so explore.css stands alone for the cards). */
+.feed-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.feed-tag {
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.tag-web { background-color: #e5f4ef; color: #1a8f81; }
+.tag-high { background-color: #fbebea; color: #d15147; }
+.tag-solved { background-color: #e6f6eb; color: #2e9f5d; }
+.tag-design { background-color: #e6f2f2; color: #1a7a8f; }
+.tag-medium { background-color: #eff0f6; color: #555c8f; }
+.tag-open { background-color: #eef5f5; color: #2ea0a0; }
+.tag-career { background-color: #e5f1f0; color: #1a828f; }
+.tag-low { background-color: #ebf5ee; color: #3b9f6d; }
+
+.feed-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.feed-card-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.feed-skill-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.feed-skill-tag {
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: #f3f5f2;
+    color: var(--text-muted);
+}
+
+.feed-card-author {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feed-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed-card-meta {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.feed-btn-pill {
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.feed-btn-pill:hover {
+    background-color: #fcfcfc;
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 900px) {
+    .explore-layout {
+        grid-template-columns: 1fr;
+    }
+}

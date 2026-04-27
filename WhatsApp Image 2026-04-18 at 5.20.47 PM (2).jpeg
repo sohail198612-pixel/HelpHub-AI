@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Leaderboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/leaderboard.css">
+</head>
+<body class="leaderboard-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar leaderboard-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="explore.html">Explore</a>
+            <a href="leaderboard.html" class="active">Leaderboard</a>
+            <a href="notifications.html">Notifications</a>
+        </nav>
+    </header>
+
+    <main class="container leaderboard-container">
+        
+        <!-- Leaderboard Header Card -->
+        <section class="leaderboard-header-card">
+            <div class="leaderboard-pre-heading">LEADERBOARD</div>
+            <h1 class="leaderboard-header-heading">Recognize the people who keep the community moving.</h1>
+            <p class="leaderboard-header-subtitle">Trust score, contribution count, and badges create visible momentum for reliable helpers.</p>
+        </section>
+
+        <!-- Dynamic Grid -->
+        <div class="leaderboard-layout">
+            
+            <!-- Left Panel: Top Helpers -->
+            <section class="leaderboard-panel">
+                <div class="panel-pre-heading">TOP HELPERS</div>
+                <h2 class="panel-heading">Rankings</h2>
+
+                <div class="ranking-list">
+                    
+                    <!-- Ranking Card 1 -->
+                    <article class="ranking-card">
+                        <div class="avatar avatar-ak">AK</div>
+                        <div class="ranking-info">
+                            <div class="ranking-name">#1 Ayesha Khan</div>
+                            <div class="ranking-skills">Figma, UI/UX, User Research</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-score">100%</div>
+                            <div class="ranking-contributions">45 contributions</div>
+                        </div>
+                    </article>
+
+                    <!-- Ranking Card 2 -->
+                    <article class="ranking-card">
+                        <div class="avatar avatar-ha">HA</div>
+                        <div class="ranking-info">
+                            <div class="ranking-name">#2 Hassan Ali</div>
+                            <div class="ranking-skills">JavaScript, React, Git/GitHub</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-score">88%</div>
+                            <div class="ranking-contributions">24 contributions</div>
+                        </div>
+                    </article>
+
+                    <!-- Ranking Card 3 -->
+                    <article class="ranking-card">
+                        <div class="avatar avatar-sn">SN</div>
+                        <div class="ranking-info">
+                            <div class="ranking-name">#3 Sara Noor</div>
+                            <div class="ranking-skills">Python, Data Analysis</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-score">74%</div>
+                            <div class="ranking-contributions">11 contributions</div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Right Panel: Badge System -->
+            <section class="leaderboard-panel">
+                <div class="panel-pre-heading">BADGE SYSTEM</div>
+                <h2 class="panel-heading">Trust and achievement</h2>
+
+                <div class="badge-list">
+                    
+                    <!-- Badge Card 1 -->
+                    <article class="badge-card">
+                        <div class="badge-info-top">
+                            <div class="badge-name">Ayesha Khan</div>
+                            <div class="badge-titles">Top Contributor • Fast Responder</div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-100"></div>
+                        </div>
+                    </article>
+
+                    <!-- Badge Card 2 -->
+                    <article class="badge-card">
+                        <div class="badge-info-top">
+                            <div class="badge-name">Hassan Ali</div>
+                            <div class="badge-titles">Code Rescuer • Bug Hunter</div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-88"></div>
+                        </div>
+                    </article>
+
+                    <!-- Badge Card 3 -->
+                    <article class="badge-card">
+                        <div class="badge-info-top">
+                            <div class="badge-name">Sara Noor</div>
+                            <div class="badge-titles">Community Voice</div>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-74"></div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

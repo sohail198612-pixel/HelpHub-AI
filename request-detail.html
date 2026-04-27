@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Authentication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar auth-navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="leaderboard.html">Leaderboard</a>
+        </nav>
+    </header>
+
+    <main class="container auth-container">
+        <div class="auth-layout">
+            <!-- Left Panel (Dark) -->
+            <div class="auth-panel auth-panel-dark">
+                <div class="auth-pre-heading">COMMUNITY ACCESS</div>
+                <h1 class="auth-heading">Enter the support<br>network.</h1>
+                <p class="auth-desc">
+                    Choose a demo identity, set your role, and jump into a multi-page product flow designed for asking,
+                    offering, and tracking help with a premium interface.
+                </p>
+                <ul class="auth-features">
+                    <li>Role-based entry for Need Help, Can Help, or Both</li>
+                    <li>Direct path into dashboard, requests, AI Center, and community feed</li>
+                    <li>Persistent demo session powered by LocalStorage</li>
+                </ul>
+            </div>
+
+            <!-- Right Panel (Light) -->
+            <div class="auth-panel auth-panel-light">
+                <div class="auth-pre-heading auth-pre-heading-primary">LOGIN / SIGNUP</div>
+                <h2 class="auth-heading-light">Authenticate your<br>community profile</h2>
+
+                <div class="auth-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Role selection</label>
+                        <select id="role" class="form-control form-select">
+                            <option>Both</option>
+                            <option>Need Help</option>
+                            <option>Can Help</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Enter Your Password">
+                        </div>
+                    </div>
+
+                    <a href="dashboard.html" class="btn btn-full btn-gradient" style="display: block; text-align: center; text-decoration: none; box-sizing: border-box;">Continue to dashboard</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

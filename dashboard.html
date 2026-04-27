@@ -1,0 +1,222 @@
+/* Profile Page Styles */
+.profile-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    padding-top: 140px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Profile Header Card */
+.profile-header-card {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 64px 48px;
+    border-radius: var(--radius-xl);
+    max-width: 100%;
+}
+
+.profile-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+.profile-header-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.profile-header-subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Profile Layout Grid */
+.profile-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 32px;
+}
+
+.profile-panel {
+    background-color: #fbfbf6; /* Light cream panel color */
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-pre-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.panel-heading {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--text-main);
+    line-height: 1.1;
+}
+
+/* Public Profile List/Stats */
+.profile-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.profile-stat-label {
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.profile-stat-value {
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-main);
+}
+
+.profile-section-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.profile-pills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.profile-pill {
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #e5f4ef;
+    color: #1a8f81;
+}
+
+/* Specific pill colors if needed (looks like simple matching theme) */
+.profile-pill-badge {
+    background-color: #ebf1f0;
+    color: #1a8f81;
+}
+
+
+/* Edit Profile Form */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.form-control {
+    padding: 16px;
+    border: 1px solid #e2e4df;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: white;
+    color: var(--text-main);
+    transition: border-color 0.2s;
+    outline: none;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: auto;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #189886, #12abae);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-button);
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #158b7a, #109a9d);
+    transform: translateY(-1px);
+}
+
+/* Navbar glass effect override for profile */
+.profile-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(244, 240, 230, 0.85); /* Frosty beige matching design */
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    max-width: none;
+}
+
+@media (max-width: 900px) {
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-header-card, .profile-panel {
+        padding: 32px 24px;
+    }
+    
+    .form-group-row {
+        flex-direction: column;
+    }
+}

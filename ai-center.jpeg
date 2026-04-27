@@ -1,0 +1,11 @@
+- [x] Update `README.md` with professional structure and project details.
+    - [x] Add project title and tagline.
+    - [x] Add live demo link (Vercel).
+    - [x] Add project context (SMIT, Saylani Batch 18).
+    - [x] Add key features (AI intelligence, Trust Graph, etc.).
+    - [x] Add tech stack.
+    - [x] Add folder structure.
+    - [x] Add installation/usage guide.
+- [x] Verify markdown formatting and links.
+- [x] Create LICENSE file with strict read-only terms.
+- [x] Create walkthrough.

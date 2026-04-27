@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/explore.css">
+</head>
+<body class="explore-page">
+
+    <div class="background-mesh"></div>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+            <div class="logo-icon">H</div>
+            <span class="logo-text">HelpHub AI</span>
+        </a>
+        
+        <nav class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="explore.html" class="active">Explore</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="notifications.html">Notifications</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Explore Header Card -->
+        <section class="explore-header-card">
+            <div class="explore-pre-heading">EXPLORE / FEED</div>
+            <h1 class="explore-header-heading">Browse help requests with filterable community context.</h1>
+            <p class="explore-header-subtitle">Filter by category, urgency, skills, and location to surface the best matches.</p>
+        </section>
+
+        <!-- Explore Grid Layout -->
+        <div class="explore-layout">
+            
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <div class="filters-pre-heading">FILTERS</div>
+                <h2 class="filters-heading">Refine the feed</h2>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="category">Category</label>
+                    <select id="category" class="filter-select">
+                        <option>All categories</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="urgency">Urgency</label>
+                    <select id="urgency" class="filter-select">
+                        <option>All urgency levels</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="skills">Skills</label>
+                    <input type="text" id="skills" class="filter-input" placeholder="React, Figma, Git/GitHub">
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label" for="location">Location</label>
+                    <input type="text" id="location" class="filter-input" placeholder="Karachi, Lahore, Remote">
+                </div>
+            </aside>
+
+            <!-- Feed Column -->
+            <div class="feed-column">
+                
+                <!-- Card 1 -->
+                <article class="feed-card">
+                    <div class="feed-tags">
+                        <span class="feed-tag tag-web">Web Development</span>
+                        <span class="feed-tag tag-high">High</span>
+                        <span class="feed-tag tag-solved">Solved</span>
+                    </div>
+                    <h3 class="feed-card-title">Need help</h3>
+                    <p class="feed-card-desc">helpn needed</p>
+                    <div class="feed-card-author">Ayesha Khan</div>
+                    <div class="feed-card-footer">
+                        <span class="feed-card-meta">Karachi • 1 helper interested</span>
+                        <a href="request-detail.html" class="feed-btn-pill">Open details</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="feed-card">
+                    <div class="feed-tags">
+                        <span class="feed-tag tag-web">Web Development</span>
+                        <span class="feed-tag tag-high">High</span>
+                        <span class="feed-tag tag-solved">Solved</span>
+                    </div>
+                    <h3 class="feed-card-title">Need help making my portfolio responsive before demo day</h3>
+                    <p class="feed-card-desc">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+                    
+                    <div class="feed-skill-tags">
+                        <span class="feed-skill-tag">HTML/CSS</span>
+                        <span class="feed-skill-tag">Responsive</span>
+                        <span class="feed-skill-tag">Portfolio</span>
+                    </div>
+
+                    <div class="feed-card-author">Sara Noor</div>
+                    <div class="feed-card-footer">
+                        <span class="feed-card-meta">Karachi • 1 helper interested</span>
+                        <a href="request-detail.html" class="feed-btn-pill">Open details</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="feed-card">
+                    <div class="feed-tags">
+                        <span class="feed-tag tag-design">Design</span>
+                        <span class="feed-tag tag-medium">Medium</span>
+                        <span class="feed-tag tag-open">Open</span>
+                    </div>
+                    <h3 class="feed-card-title">Looking for Figma feedback on a volunteer event poster</h3>
+                    <p class="feed-card-desc">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+                    
+                    <div class="feed-skill-tags">
+                        <span class="feed-skill-tag">Figma</span>
+                        <span class="feed-skill-tag">Poster</span>
+                        <span class="feed-skill-tag">Design Review</span>
+                    </div>
+
+                    <div class="feed-card-author">Ayesha Khan</div>
+                    <div class="feed-card-footer">
+                        <span class="feed-card-meta">Lahore • 1 helper interested</span>
+                        <a href="request-detail.html" class="feed-btn-pill">Open details</a>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="feed-card">
+                    <div class="feed-tags">
+                        <span class="feed-tag tag-career">Career</span>
+                        <span class="feed-tag tag-low">Low</span>
+                        <span class="feed-tag tag-solved">Solved</span>
+                    </div>
+                    <h3 class="feed-card-title">Need mock interview support for internship applications</h3>
+                    <p class="feed-card-desc">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+                    
+                    <div class="feed-skill-tags">
+                        <span class="feed-skill-tag">Interview Prep</span>
+                        <span class="feed-skill-tag">Career</span>
+                        <span class="feed-skill-tag">Frontend</span>
+                    </div>
+
+                    <div class="feed-card-author">Sara Noor</div>
+                    <div class="feed-card-footer">
+                        <span class="feed-card-meta">Remote • 2 helpers interested</span>
+                        <a href="request-detail.html" class="feed-btn-pill">Open details</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
